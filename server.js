@@ -26,5 +26,5 @@ console.log(DARKSKY_API_KEY);
 })
 
 app.listen(PORT, () => {
-  console.log('server has started');
+  console.log(`server has started on ${PORT}`);
 })
