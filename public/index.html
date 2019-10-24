@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2STq12gUAr_1LEkSngjlWxeSHj88LZbQ&libraries=places"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Courgette|Kalam:400,700|Permanent+Marker|Rajdhani:400,600&display=swap" rel="stylesheet">
+  <script defer src="script.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+  <div class="nav">
+    <h2>Weather app</h2>
+  </div>
+  <div class="main">
+    <div class="app-display" id="display">
+      <div class="left-side" id="panel">
+        <div class="icon-container">
+          <canvas id="icon" width="100" height="100"></canvas>
+        </div>
+        <div class="general-information">
+          <div class="status" data-status>Enter a location</div>
+          <div class="location" data-location>to find the weather</div>
+        </div>
+      </div>
+      <div class="right-side" id="panel2">
+        <div class="detail-section">
+          <div class="detail">
+            <div class="title">Wind</div>
+            <div class="value" data-wind>TBD</div>
+          </div>
+          <div class="detail">
+            <div class="title">Temperature</div>
+            <div class="value" data-temperature>TBD</div>
+          </div>
+          <div class="detail">
+            <div class="title">Percipitation</div>
+            <div class="value" data-percipitation>TBD</div>
+          </div>
+          <div class="detail">
+            <div class="title">Humidity</div>
+            <div class="value" data-humidity>TBD</div>
+          </div>
+        </div>
+        <div class="city-search-container">
+          <input class="city-seach" type="text" data-city-search placeholder="                .........">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright 2019</p>
+
+    <br>
+    <a class="darksky-logo" href="https://darksky.net/poweredby">Powered by dark sky</a>
+  </div>
+  <script type="text/javascript">
+    console.log('hello');
+
+    const panel = document.getElementById('panel')
+    if (window.matchMedia("(min-width: 767px)").matches) {
+      panel.classList.add('slideAnim');
+    }
+  </script>
+</body>
+
+</html>
