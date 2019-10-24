@@ -1,8 +1,10 @@
+// SEARCH BOX
 const searchElement = document.querySelector('[data-city-search]')
 const searchBox = new google.maps.places.SearchBox(searchElement)
 
 
 searchBox.addListener('places_changed', () => {
+  console.log('Location Selected');
   const place = searchBox.getPlaces()[0]
   if (place == null) return
   const latitude = place.geometry.location.lat()
@@ -35,6 +37,7 @@ icon.play()
 
 
 function setWeatherData(data, place) {
+  console.log('Updating Weather Data');
   locationElement.textContent = place
   statusElement.textContent = data.summary
   temperatureElement.textContent = ` ${data.temperature} ℉ `

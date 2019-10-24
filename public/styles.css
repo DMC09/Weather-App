@@ -54,9 +54,12 @@ html, body {
   background: #02529E;
 }
 
-.left-side .icon-container {}
 
-.left-side .general-information {}
+
+.status, .location {
+  margin-bottom: .5rem;
+  line-height: 1.25;
+}
 
 /* RIGHT SIDE */
 .app-display .right-side {
@@ -85,9 +88,11 @@ input {
   border-bottom: 1px solid #757575;
   color: #B2D1D9;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: .75rem;
   outline: none;
   width: 75%;
+  text-align: center;
+  overflow: scroll;
 }
 
 .right-side .detail-section {
@@ -95,6 +100,7 @@ input {
   flex-flow: column;
   justify-content: space-around;
   height: 40%;
+  line-height: 1.25;
 }
 
 .slideAnim {
@@ -145,6 +151,7 @@ input {
     border-top-left-radius: 3% !important;
     border-bottom-left-radius: 3% !important;
     box-shadow: initial;
+    font-size: 1.25rem !important;
   }
 
   .right-side {
@@ -152,6 +159,7 @@ input {
     margin-left: initial !important;
     z-index: initial !important;
     position: initial !important;
+    font-size: 1rem !important;
     border-radius: none;
     box-shadow: initial !important;
   }
