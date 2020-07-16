@@ -1,1 +1,48 @@
 @import "reset.css";
+html,
+body {
+  height: 100vh;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  text-align: center;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+nav h1 {
+  font-size: 2.5rem;
+}
+main {
+  border: 1px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+}
+
+main .icon-container {
+  margin-bottom: 5rem;
+}
+
+footer {
+  bottom: 0;
+  margin: auto;
+  width: 90%;
+  height: 10vh;
+
+  border: 1px solid red;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.value {
+  font-weight: lighter;
+}
