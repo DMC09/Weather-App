@@ -11,20 +11,15 @@
 }
 html,
 body {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
   text-align: center;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   background: var(--bg-color);
 }
-nav {
-  text-align: center;
-  height: 10vh;
-  width: 90%;
-  margin: auto;
-}
-nav h1 {
-  font-size: 2.5rem;
-}
+
 main {
   border-radius: 10px;
   background: linear-gradient(225deg, #e6e6e6, #ffffff);
@@ -33,27 +28,22 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-flow: column;
-  height: 80vh;
-  width: 90%;
-  margin: auto;
+height: 80%;
+width: 80%;
+max-width: 800px;
+margin: auto;
 }
 
 main .icon-container {
-
 }
 main section.location_info {
-
-
 }
 main section.data {
-
   flex-basis: 40%;
   display: grid;
-  place-items:center;
+  place-items: center;
 }
 main section.city-search-container {
-
-
 }
 
 section.city-search-container input {
@@ -61,11 +51,9 @@ section.city-search-container input {
   font-size: 1.15rem;
 }
 footer {
-  bottom: 0;
-  margin: auto;
-  width: 90%;
-  height: 10vh;
+  margin-top: -1rem;
 
+  height: 10%;
 }
 
 .title {
@@ -73,16 +61,16 @@ footer {
 }
 
 .value {
-font-size: 1rem;
+  font-size: 1rem;
   font-style: italic;
 }
 
-.status{
+.status {
   font-size: 1.75rem;
   font-weight: bold;
-  color:#0a5062;
+  color: #0a5062;
 }
-.location{
+.location {
   font-size: 1.25rem;
-font-style: italic;
+  font-style: italic;
 }
