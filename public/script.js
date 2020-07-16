@@ -37,6 +37,7 @@ icon.play()
 
 
 function setWeatherData(data, place) {
+  console.log(data);
   console.log('Updating Weather Data');
   locationElement.textContent = place
   statusElement.textContent = data.summary

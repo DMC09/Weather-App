@@ -1,22 +1,35 @@
 @import "reset.css";
+
+:root {
+  --neu-mixin : {
+    border-radius: 45px;
+    background: linear-gradient(225deg, #e6e6e6, #ffffff);
+    box-shadow: -6px 6px 6px #c2c2c2, 6px -6px 6px #ffffff;
+  }
+  --cont-color: #fff;
+  --bg-color: #d3d3d3;
+}
 html,
 body {
   height: 100vh;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  background: var(--bg-color);
 }
 nav {
   text-align: center;
   height: 10vh;
   width: 90%;
   margin: auto;
-  border: 1px solid black;
 }
 nav h1 {
   font-size: 2.5rem;
 }
 main {
-  border: 1px solid purple;
+  border-radius: 10px;
+  background: linear-gradient(225deg, #e6e6e6, #ffffff);
+  box-shadow:  -1px 1px 2px #696969,
+               1px -1px 2px #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,8 +48,7 @@ footer {
   margin: auto;
   width: 90%;
   height: 10vh;
-
-  border: 1px solid red;
+  visibility: hidden;
 }
 
 .title {
