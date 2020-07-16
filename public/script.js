@@ -25,7 +25,7 @@ searchBox.addListener('places_changed', () => {
   })
 })
 
-const icon = new Skycons({color: '#B2D1D9'})
+const icon = new Skycons({color: '#0a5062'})
 const locationElement = document.querySelector('[data-location]')
 const statusElement = document.querySelector('[data-status]')
 const temperatureElement = document.querySelector('[data-temperature]')
@@ -39,6 +39,7 @@ icon.play()
 function setWeatherData(data, place) {
   console.log(data);
   console.log('Updating Weather Data');
+
   locationElement.textContent = place
   statusElement.textContent = data.summary
   temperatureElement.textContent = ` ${data.temperature} ℉ `

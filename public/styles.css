@@ -30,7 +30,7 @@ main {
   background: linear-gradient(225deg, #e6e6e6, #ffffff);
   box-shadow: -1px 1px 2px #696969, 1px -1px 2px #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: column;
   height: 80vh;
@@ -39,29 +39,50 @@ main {
 }
 
 main .icon-container {
-  margin-bottom: 5rem;
+
+}
+main section.location_info {
+
+
 }
 main section.data {
-  border: 1px solid navy;
+
+  flex-basis: 40%;
+  display: grid;
+  place-items:center;
 }
 main section.city-search-container {
+
+
 }
 
 section.city-search-container input {
   text-align: center;
+  font-size: 1.15rem;
 }
 footer {
   bottom: 0;
   margin: auto;
   width: 90%;
   height: 10vh;
-  visibility: hidden;
+
 }
 
 .title {
-  /* font-size: 1.5rem; */
+  font-size: 1.25rem;
 }
 
 .value {
-  font-weight: lighter;
+font-size: 1rem;
+  font-style: italic;
+}
+
+.status{
+  font-size: 1.75rem;
+  font-weight: bold;
+  color:#0a5062;
+}
+.location{
+  font-size: 1.25rem;
+font-style: italic;
 }
