@@ -82,18 +82,24 @@
       content="./flavicons/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
     <script
       defer
       type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2STq12gUAr_1LEkSngjlWxeSHj88LZbQ&libraries=places"></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2STq12gUAr_1LEkSngjlWxeSHj88LZbQ&libraries=places"
+    ></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"
-      charset="utf-8"></script>
+      charset="utf-8"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Caveat|Courgette|Kalam:400,700|Permanent+Marker|Rajdhani:400,600&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <script defer src="script.js" charset="utf-8"></script>
   </head>
 
@@ -102,37 +108,37 @@
       <h1>Weather App</h1>
     </nav>
 
+    <main>
+      <div class="icon-container">
+        <canvas id="icon" width="200" height="200"></canvas>
+      </div>
 
-<main>
-  <div class="icon-container">
-    <canvas id="icon" width="200" height="200"></canvas>
-  </div>
+      <p class="status" data-status>-</p>
+      <p class="location" data-location></p>
 
-  <div class="status" data-status> - </div>
-  <div class="location" data-location></div>
+      <section class="data">
+        <p class="title">Wind</p>
+        <p class="value" data-wind>TBD</p>
 
-  <p class="title">Wind</p>
-  <div class="value" data-wind>TBD</div>
+        <p class="title">Temperature</p>
+        <p class="value" data-temperature>TBD</p>
 
-  <p class="title">Temperature</p>
-  <div class="value" data-temperature>TBD</div>
+        <p class="title">Precipitation</p>
+        <p class="value" data-percipitation>TBD</p>
 
-  <p class="title">Precipitation</p>
-  <div class="value" data-percipitation>TBD</div>
+        <p class="title">Humidity</p>
+        <p class="value" data-humidity>TBD</p>
+      </section>
 
-  <p class="title">Humidity</p>
-  <div class="value" data-humidity>TBD</div>
-
-  <div class="city-search-container">
-    <input
-      class="city-seach"
-      type="text"
-      data-city-search
-      placeholder="city, state"
-    />
-  </div>
-
-</main>
+      <section class="city-search-container">
+        <input
+          class="city-seach"
+          type="text"
+          data-city-search
+          placeholder="city, state"
+        />
+      </section>
+    </main>
     <footer>
       <p>Copyright 2019</p>
       <br />

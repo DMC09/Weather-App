@@ -28,8 +28,7 @@ nav h1 {
 main {
   border-radius: 10px;
   background: linear-gradient(225deg, #e6e6e6, #ffffff);
-  box-shadow:  -1px 1px 2px #696969,
-               1px -1px 2px #ffffff;
+  box-shadow: -1px 1px 2px #696969, 1px -1px 2px #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +41,15 @@ main {
 main .icon-container {
   margin-bottom: 5rem;
 }
+main section.data {
+  border: 1px solid navy;
+}
+main section.city-search-container {
+}
 
+section.city-search-container input {
+  text-align: center;
+}
 footer {
   bottom: 0;
   margin: auto;
@@ -52,7 +59,7 @@ footer {
 }
 
 .title {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .value {
