@@ -104,8 +104,6 @@
   </head>
 
   <body>
-
-
     <main>
       <div class="icon-container">
         <canvas id="icon" width="200" height="200"></canvas>
@@ -117,17 +115,24 @@
       </section>
 
       <section class="data">
-        <p class="title">Wind</p>
-        <p class="value" data-wind>TBD</p>
+        <div>
+          <p class="title">Wind</p>
+          <p class="value" data-wind>TBD</p>
+        </div>
 
-        <p class="title">Temperature</p>
-        <p class="value" data-temperature>TBD</p>
+        <div>
+          <p class="title">Temperature</p>
+          <p class="value" data-temperature>TBD</p>
+        </div>
 
-        <p class="title">Precipitation</p>
-        <p class="value" data-percipitation>TBD</p>
-
-        <p class="title">Humidity</p>
-        <p class="value" data-humidity>TBD</p>
+        <div>
+          <p class="title">Precipitation</p>
+          <p class="value" data-percipitation>TBD</p>
+        </div>
+        <div>
+          <p class="title">Humidity</p>
+          <p class="value" data-humidity>TBD</p>
+        </div>
       </section>
 
       <section class="city-search-container">
@@ -135,13 +140,14 @@
           class="city-seach"
           type="text"
           data-city-search
-          placeholder="city, state"
+          placeholder="City"
         />
       </section>
     </main>
     <footer>
-      <p>Copyright 2019</p>
       <br />
+      <p>Copyright 2019</p>
+
       <a class="darksky-logo" href="https://darksky.net/poweredby"
         >Powered by dark sky</a
       >

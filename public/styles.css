@@ -1,11 +1,6 @@
 @import "reset.css";
 
 :root {
-  --neu-mixin : {
-    border-radius: 45px;
-    background: linear-gradient(225deg, #e6e6e6, #ffffff);
-    box-shadow: -6px 6px 6px #c2c2c2, 6px -6px 6px #ffffff;
-  }
   --cont-color: #fff;
   --bg-color: #d3d3d3;
 }
@@ -17,21 +12,21 @@ body {
   text-align: center;
   height: 100%;
   font-family: "Roboto", sans-serif;
-  background: var(--bg-color);
+  background: var(--cont-color);
 }
 
 main {
   border-radius: 10px;
   background: linear-gradient(225deg, #e6e6e6, #ffffff);
-  box-shadow: -1px 1px 2px #696969, 1px -1px 2px #ffffff;
+  box-shadow: -11px 11px 21px #696969, 11px -11px 21px #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: column;
-height: 80%;
-width: 80%;
-max-width: 800px;
-margin: auto;
+  height: 80%;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
 }
 
 main .icon-container {
@@ -40,10 +35,14 @@ main section.location_info {
 }
 main section.data {
   flex-basis: 40%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+
 }
 main section.city-search-container {
+  margin-bottom: 0.5rem;
+
 }
 
 section.city-search-container input {
@@ -73,4 +72,30 @@ footer {
 .location {
   font-size: 1.25rem;
   font-style: italic;
+}
+
+
+
+/*Large devices*/
+
+@media (min-width: 992px) {
+  main section.data{
+
+    flex-flow: row;
+    width: 75%;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+ /*Extra large devices*/
+
+@media (min-width: 1200px) {
+  main section.data{
+
+    flex-flow: row;
+    width: 75%;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
