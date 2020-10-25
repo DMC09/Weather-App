@@ -38,11 +38,9 @@ main section.data {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-
 }
 main section.city-search-container {
   margin-bottom: 0.5rem;
-
 }
 
 section.city-search-container input {
@@ -57,6 +55,7 @@ footer {
 
 .title {
   font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .value {
@@ -74,13 +73,10 @@ footer {
   font-style: italic;
 }
 
-
-
 /*Large devices*/
 
 @media (min-width: 992px) {
-  main section.data{
-
+  main section.data {
     flex-flow: row;
     width: 75%;
     align-items: center;
@@ -88,11 +84,10 @@ footer {
   }
 }
 
- /*Extra large devices*/
+/*Extra large devices*/
 
 @media (min-width: 1200px) {
-  main section.data{
-
+  main section.data {
     flex-flow: row;
     width: 75%;
     align-items: center;
