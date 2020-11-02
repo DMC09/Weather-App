@@ -9,4 +9,4 @@ A web app used to deliver basic weather data for any city.
 ## Tech/framework used
 
 <b>Built with</b>
-- HTML, CSS, and Javascript.
+- HTML, CSS, and Javascript
