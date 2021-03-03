@@ -11,4 +11,4 @@ A web app used to deliver basic weather data for any city.
 
 
 ## Screenshots
-<img src="https://github.com/DMC09/Weather-App/blob/main/public/Screenshot_1.png" alt="Features" width="600"/>
+<img src="https://github.com/DMC09/Weather-App/blob/main/public/Screenshot_1.png" alt="Main" width="600"/>
