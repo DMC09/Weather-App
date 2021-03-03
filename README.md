@@ -3,10 +3,12 @@
 A web app used to deliver basic weather data for any city.
 <br />[Live](https://weather-app-dmc.herokuapp.com)
 
+## Tech stack
+* HTML
+* CSS
+* Javascript
+* Node.js
+
+
 ## Screenshots
-![Image of App](public/Screenshot_1.png)
-
-## Tech/framework used
-
-<b>Built with</b>
-- HTML, CSS, and Javascript
+<img src="https://github.com/DMC09/Weather-App/blob/main/public/Screenshot_1.png" alt="Features" width="600"/>
